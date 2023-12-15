@@ -1,0 +1,12 @@
+replicaCount: 3
+
+image:
+  repository: hello-world
+  pullPolicy: IfNotPresent
+  tag: ""
+
+service:
+  type: NodePort
+  port: 80
+  targetPort: 80
+  nodePort: 30080  
